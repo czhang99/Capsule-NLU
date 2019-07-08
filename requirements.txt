@@ -1,0 +1,4 @@
+tensorflow_gpu==1.5.0
+numpy==1.14.0
+six==1.11.0
+scikit_learn==0.21.2
