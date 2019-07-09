@@ -37,10 +37,9 @@ pip3 install -r requirements.txt
 ```
 ## Usage
 * Run the full model on SNIPS-NLU dataset with default hyperparameter settings<br>
-```python3 train.py --dataset=snips```
-
-* Try run without early-stop
-```python3 train.py --dataset=snips --no_early_stop --max_epochs=60```
+```python3 train.py --dataset=snips```<br>
+    > Try run without early-stop
+    ```python3 train.py --dataset=snips --no_early_stop --max_epochs=60```
 
 * Run the model without re-routing on SNIPS-NLU dataset<br>
 ```python3 train.py --dataset=snips --model_type=without_rerouting```
@@ -78,7 +77,7 @@ In each sub-folder,<br>
     e.g. ```O B-artist I-artist O O B-playlist I-playlist O```
 
 ### Work on your own data
-Prepare and organize your dataset in a folder according to the [format]((### Format)) and put it under ```./data/``` and use `--dataset=foldername` during training. 
+Prepare and organize your dataset in a folder according to the [format](#format) and put it under ```./data/``` and use `--dataset=foldername` during training. 
 
 For example, your dataset is `./data/mydata`, then you need to use the flag `--dataset=mydata` for ```train.py```.<br>
 Your dataset should be seperated to three folders - train, test, and valid, which is named 'train', 'test', and 'valid' by default setting of train.py. 
